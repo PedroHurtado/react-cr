@@ -1,0 +1,42 @@
+1.MPA(Multipage applicacion)
+    get->url
+    post->eviando un formulario
+
+    MVC
+        1. Lee el modelo
+        2. Pasa el modelo a la vista
+        3. Genera el html
+    
+    constras:
+        mas procesamiento de servidor (cache eficiente)
+    pro:
+        va a ser más rapido que una SPA
+        SEO
+    
+    Errores: no respetar el PRG pattern
+    https://en.wikipedia.org/wiki/Post/Redirect/Get
+
+2.SPA(Single page application)
+    1. se carga un index.html con todo el js
+    2. se solicitan los datos y con el sistema de template del framework(react,angular,etc,etc)
+    3. se genera el html en el cliente.
+
+    pros:
+        1. mejor sensacion de cara al usuario
+    contras:
+        1. no seo
+        2. mas lento
+        3. problemas de memoria
+
+3.PWA(Progresive web app)
+
+    //https://developer.chrome.com/blog/beyond-spa/
+    
+    1. la primera vez se descarga html,css,js
+    2. la segunda vez no se descarga el html, css, js(Service Worker)
+    3. offline
+
+    pros:
+        1.tengo lo mismo que con una MPA sin viajes al servidor
+    constras:
+        2. almacenamiento local que se va a consumir

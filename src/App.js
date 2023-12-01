@@ -1,7 +1,8 @@
 //import Array from "./Array";import Login  from "./Login";
 //import Parent from "./parent/parent";
 
-import Form from "./form/form";
+import FetchData from "./fetchdata.js/fetcdata";
+//import Form from "./form/form";
 
 //import Calendar from "./calendar/calendar";
 
@@ -32,7 +33,7 @@ function App() {
     
   );*/
   return(
-    <Form/>
+    <FetchData/>
   )
 }
 

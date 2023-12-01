@@ -1,3 +1,20 @@
 {
-    "pizzas":[]
+  "pizzas": [
+    {
+      "id": 1,
+      "name": "carbonara"
+    },
+    {
+      "id": 2,
+      "name": "cuatro quesos"
+    },
+    {
+      "id": 3,
+      "name": "cuatro quesos"
+    },
+    {
+      "id": 5,
+      "name": "carbonara"
+    }
+  ]
 }
