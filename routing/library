@@ -1,0 +1,16 @@
+1. solo cargamos un index.html
+2. peticiones a una api
+3. sistemas de templates renderizar en el cliente
+
+https://developer.mozilla.org/en-US/docs/Web/API/History
+
+1. Metainformacion
+    {path:'', component:''}
+2. Link
+    <a href="/pagina1">pagina1</a>
+
+    subscripcion a los anchor al evento click
+        ev.preventDefault()
+        capturar el href
+3. Outlet
+    renderizar el componente en un sitio en concreto

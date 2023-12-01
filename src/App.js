@@ -1,7 +1,21 @@
 //import Array from "./Array";import Login  from "./Login";
 //import Parent from "./parent/parent";
 
-import FetchData from "./fetchdata.js/fetcdata";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./pages/layout";
+import React, { Suspense } from "react";
+//import Pagina1 from "./pages/pagina1";
+//import Pagina2 from "./pages/pagina2";
+//import Pagina3 from "./pages/pagina3";
+
+const Pagina1 = React.lazy(() => import('./pages/pagina1'))
+const Pagina2 = React.lazy(() => import('./pages/pagina2'))
+const Pagina3 = React.lazy(() => import('./pages/pagina3'))
+
+
+
+
+//import FetchData from "./fetchdata.js/fetcdata";
 //import Form from "./form/form";
 
 //import Calendar from "./calendar/calendar";
@@ -32,8 +46,16 @@ function App() {
     </>
     
   );*/
-  return(
-    <FetchData/>
+  return (
+    <Suspense fallback={<div>Loading....</div>}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="pagina1/:id" element={<Pagina1 />} />
+          <Route path="pagina2" element={<Pagina2 />} />
+          <Route path="pagina3" element={<Pagina3 />} />
+        </Route>
+      </Routes>
+    </Suspense>
   )
 }
 

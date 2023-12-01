@@ -1,8 +1,8 @@
 import { useFetch } from "./useFetch";
 
-export default function FetchData(){
+export default function FetchData({id}){
 
-    const [data,error,loading] = useFetch("http://localhost:8080/pizzas/55")
+    const [data,error,loading] = useFetch(`http://localhost:8080/pizzas/${id}`)
 
 
     if(loading){
