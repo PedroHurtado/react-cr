@@ -1,0 +1,48 @@
+1. https://web.dev/explore/learn-core-web-vitals?hl=es-419
+
+    html->css,js
+
+        render blok
+            css compilarlo
+        csssom
+
+        https://web.dev/articles/critical-rendering-path/constructing-the-object-model?hl=es-419
+        https://web.dev/articles/critical-rendering-path/render-tree-construction?hl=es-419
+
+        https://web.dev/articles/extract-critical-css?hl=es-419
+
+cache
+    https://web.dev/articles/bfcache?hl=es-419
+    https://web.dev/articles/http-cache?hl=es-419
+
+    1. html->304 si no se ha modificado
+    2. html->200
+
+    resto de recursos
+        31536000
+    fonts
+        https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+
+    imagens
+        https://web.dev/articles/http-cache?hl=es-419
+
+    <picture>
+        <source srcset="mdn-logo-wide.png" media="(min-width: 600px)" />
+        <img src="mdn-logo-narrow.png" alt="MDN" />
+    </picture>
+
+    avif
+    webp
+    jpg/png
+
+    convertir la imagen en 6 imagens
+        2 avif mobil descktop
+        2 webp mobil descktop
+        2 jpeg mobil descktop
+
+    https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/?utm_source=lighthouse&utm_medium=devtools
+
+
+    https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+
+    https://web.dev/articles/fetch-priority?hl=es-419
